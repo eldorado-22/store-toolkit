@@ -7,10 +7,16 @@ import Favorites from "./pages/Favorites";
 import Product from "./pages/Product";
 import BasketPage from "./pages/Basket";
 import ProductModal from "./pages/Product/ProductModal";
+import {UseAppSelector} from "./Hooks/reducer-hooks";
 
 function App() {
+    const {mode} = UseAppSelector(s => s.productSliceReducer)
+
     return (
-        <>
+        <div style={{
+            background: mode ? "black" : "",
+            color: mode ? "white" : "",
+        }}>
             <Header/>
             <Routes>
                 <Route path={"/"} element={<Product/>}/>
@@ -19,7 +25,7 @@ function App() {
                 <Route path={"/product-modal/:ModalId"} element={<ProductModal/>}/>
             </Routes>
             <Footer/>
-        </>
+        </div>
     );
 }
 

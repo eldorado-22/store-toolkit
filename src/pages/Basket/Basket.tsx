@@ -33,7 +33,7 @@ const BasketCard = ({el}: IBasketC) => {
             </td>
             <td className="px-6 my-4">
                 <button onClick={() => dispatch(deleteBasket(el.id))}>
-                    <MdDelete className="text-2xl"/>
+                    <MdDelete className="text-2xl text-red-700"/>
                 </button>
             </td>
         </tr>

@@ -27,7 +27,7 @@ export const CurrentAllDefaults = (e: any) => (dispatch: appDispatch) => {
     dispatch(currentDefault(e))
 }
 
-export const modeDateAdil = (mode: any) => (dispatch: appDispatch) => {
+export const modeDateEldar = (mode: any) => (dispatch: appDispatch) => {
     dispatch(modeUpDate(mode))
 }
 
@@ -43,7 +43,7 @@ export const getValueString = (values: any) => (dispatch: appDispatch) => {
     dispatch(getValueStr(values))
 }
 
-export const upDateImageAdil = (up: boolean) => (dispatch: appDispatch) => {
+export const upDateImageEldar = (up: boolean) => (dispatch: appDispatch) => {
     dispatch(upDateImage(up))
 }
 
