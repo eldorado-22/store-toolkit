@@ -24,7 +24,6 @@ function App() {
                 <Route path={"/favorite"} element={<Favorites/>}/>
                 <Route path={"/product-modal/:ModalId"} element={<ProductModal/>}/>
             </Routes>
-            <Footer/>
         </div>
     );
 }
