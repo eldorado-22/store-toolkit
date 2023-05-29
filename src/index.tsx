@@ -5,17 +5,20 @@ import App from './App';
 import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import {setupStore} from "./Store/store";
+import Layout from "./components/Layout";
 
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-      <Provider store={setupStore()}>
-          <BrowserRouter>
-              <App/>
-          </BrowserRouter>
-      </Provider>
-  </React.StrictMode>
+    <React.StrictMode>
+        <Provider store={setupStore()}>
+            <BrowserRouter>
+                <Layout>
+                    <App/>
+                </Layout>
+            </BrowserRouter>
+        </Provider>
+    </React.StrictMode>
 );

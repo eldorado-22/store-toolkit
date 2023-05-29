@@ -17,12 +17,12 @@ const BasketCard = ({el}: IBasketC) => {
 
     return (
         <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                <h1>{el.title}</h1>
-            </th>
             <td className="px-6 my-4">
                 <img src={el.image} width={50} alt=""/>
             </td>
+            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                <h1>{el.title}</h1>
+            </th>
             <td className="px-6 my-8 flex justify-between w-[120px] text-lg">
                 <button onClick={() => dispatch(decBasket(el))}><BsFillPatchMinusFill/></button>
                 <p>{el.quantity}</p>

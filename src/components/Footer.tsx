@@ -1,6 +1,14 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import {BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTwitter, BsYoutube} from "react-icons/bs";
+import {
+    BsDribbble,
+    BsFacebook,
+    BsGithub,
+    BsInstagram,
+    BsLinkedin,
+    BsTwitter,
+    BsYoutube
+} from "react-icons/bs";
 import logo from "./../images/logo.png"
 import social from "./../images/social.png"
 
@@ -32,24 +40,30 @@ const Footer = () => {
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <a href="#" className="flex items-center mb-4 sm:mb-0">
                         <img src={social} className="h-8 mr-3"
-                        alt="Flowbite Logo"/>
+                             alt="Flowbite Logo"/>
                         <span className="py-4 self-center text-xl font-semibold whitespace-nowrap dark:text-white">Social Media</span>
                     </a>
 
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-                        <a href="https://www.instagram.com/zhumashevv_996/" target="_blank" className="mr-4 hover:underline md:mr-6"><BsInstagram/></a>
-                        <a href="https://www.linkedin.com/in/eldorado-jumashevv-51a792259/" target="_blank" className="mr-4 hover:underline md:mr-6"><BsLinkedin/></a>
-                        <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank" className="mr-3 hover:underline md:mr-6"><BsFacebook/></a>
-                        <a href="https://github.com/eldorado-22" target="_blank" className="mr-4 hover:underline md:mr-6"><BsGithub/></a>
-                        <a href="https://www.youtube.com/channel/UCM4GdMSYh-zgfNwlY27vTgg" target="_blank" className="mr-4 hover:underline md:mr-6"><BsYoutube/></a>
+                        <a href="https://www.instagram.com/zhumashevv_996/" target="_blank"
+                           className="mr-4 hover:underline md:mr-6"><BsInstagram/></a>
+                        <a href="https://www.linkedin.com/in/eldorado-jumashevv-51a792259/" target="_blank"
+                           className="mr-4 hover:underline md:mr-6"><BsLinkedin/></a>
+                        <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank"
+                           className="mr-3 hover:underline md:mr-6"><BsFacebook/></a>
+                        <a href="https://github.com/eldorado-22" target="_blank"
+                           className="mr-4 hover:underline md:mr-6"><BsGithub/></a>
+                        <a href="https://www.youtube.com/channel/UCM4GdMSYh-zgfNwlY27vTgg" target="_blank"
+                           className="mr-4 hover:underline md:mr-6"><BsYoutube/></a>
                         <a href="https://twitter.com/jumashevv996" target="_blank" className=" hover:underline md:mr-6"><BsTwitter/></a>
-                        <a href="https://dribbble.com/jumashevv" target="_blank" className="hover:underline "><BsDribbble/></a>
+                        <a href="https://dribbble.com/jumashevv" target="_blank"
+                           className="hover:underline "><BsDribbble/></a>
                     </ul>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"/>
                 <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023
                     <a href="#"
-                       className="hover:underline">Eldorado.JM™
+                       className="hover:underline"> Eldorado.JM™
                     </a>. All Rights Reserved.
                 </span>
             </div>
