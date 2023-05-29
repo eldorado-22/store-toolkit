@@ -9,7 +9,7 @@ const BasketPage = () => {
 
     return (
         <div className="container">
-            <div className="pt-32">
+            <div className="py-24">
                 {
                     basket.length ?
                         <div className="relative overflow-x-auto">
@@ -42,8 +42,8 @@ const BasketPage = () => {
                             </table>
                         </div>
                         :
-                        <div className="flex justify-center my-32">
-                            <button onClick={() => navigate("/")} className="border-4 border-blue-700 rounded-lg  py-8 px-44">
+                        <div className="flex justify-center py-20">
+                            <button onClick={() => navigate("/")} className="border-4 border-blue-700 rounded-lg  py-10 px-44">
                                 Open Product
                             </button>
                         </div>

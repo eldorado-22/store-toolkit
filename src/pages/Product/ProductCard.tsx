@@ -4,6 +4,8 @@ import {UseAppDispatch, UseAppSelector} from "../../Hooks/reducer-hooks";
 import {NavLink, useNavigate} from "react-router-dom";
 import {AddToBasket} from "../../Store/Reducer/ActionReducer/BasketAction";
 import {RiShoppingBasket2Fill, RiShoppingBasket2Line} from "react-icons/ri";
+import {AddToFavorite} from "../../Store/Reducer/ActionReducer/FavoriteAction";
+import {BsFillBalloonHeartFill} from "react-icons/bs";
 
 interface IProductCards {
     el: IProduct
@@ -13,9 +15,9 @@ const ProductCard = ({el}: IProductCards) => {
     const dispatch = UseAppDispatch()
     const {defaultCurrent, allDefaultCurrent} = UseAppSelector(state => state.productSliceReducer)
     const {basket} = UseAppSelector(s => s.BasketSlice)
-    // const {favorite} = UseAppSelector(s => s.FavoriteSliceReducer)
+    const {favorite} = UseAppSelector(s => s.FavoriteSlice)
     const found = basket.some(some => some.id === el.id)
-    // const favoriteFound = favorite.some(some => some.id === el.id)
+    const favoriteFound = favorite.some(some => some.id === el.id)
     const navigate = useNavigate()
 
 
@@ -40,7 +42,7 @@ const ProductCard = ({el}: IProductCards) => {
                                 <RiShoppingBasket2Line/>
                             </button>
                     }
-                    {/*<button onClick={() => dispatch(AddToFavorite(el))}><MdFavorite className={favoriteFound ? "text-red-600 text-3xl" : "text-3xl"}/></button>*/}
+                    <button onClick={() => dispatch(AddToFavorite(el))}><BsFillBalloonHeartFill className={favoriteFound ? "text-red-700 text-3xl" : "text-3xl"}/></button>
                 </div>
             </div>
         </div>
