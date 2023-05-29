@@ -9,8 +9,8 @@ const initialState: IProductState = {
     error: "",
     defaultCurrent: "kg",
     allDefaultCurrent: {
-        kg: [1, "Сом"],
-        ru: [0.93, "Рубль"],
+        kg: [1, "som"],
+        ru: [0.93, "рубль"],
         usa: [0.011, "$"],
     },
     mode: false,
