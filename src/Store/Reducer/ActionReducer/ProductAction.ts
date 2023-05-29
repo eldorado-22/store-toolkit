@@ -27,7 +27,7 @@ export const CurrentAllDefaults = (e: any) => (dispatch: appDispatch) => {
     dispatch(currentDefault(e))
 }
 
-export const modeDateEldar = (mode: any) => (dispatch: appDispatch) => {
+export const modeDate = (mode: any) => (dispatch: appDispatch) => {
     dispatch(modeUpDate(mode))
 }
 
